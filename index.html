@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapur GOBA</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+    <!-- header section starts  -->
+
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="#" class="logo">Dapur GOBA<span>.</span></a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#products">Catering</a>
+        <a href="#review">Review</a>
+        
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <span> Jasa Catering Prasmanan & Nasi Box di Kota Bogor</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum ut minus corrupti dolorum dolore assumenda iste voluptate dolorem pariatur.</p>
+        <a href="https://wa.me/6285841400449" class="btn">Hubungi Kami</a>
+    </div>
+    
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span> Tentang </span> Kami </h1>
+
+    <div class="row">
+
+        <div class="image-container">
+            <img src="about.jpg" alt="Dapur GOBA">
+        </div>
+
+        <div class="content">
+            <h3>Kenapa Harus Kami?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo pariatur corporis perspiciatis aspernatur a ullam repudiandae autem asperiores quibusdam omnis commodi alias repellat illum, unde optio temporibus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni quia molestias perspiciatis, unde repudiandae quidem.</p>
+            <a href="#" class="btn">Lebih lanjut</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- icons section starts  -->
+
+<section class="icons-container">
+
+    <div class="icons">
+        <img src="https://www.freepnglogos.com/uploads/logo-halal-png/logo-vente-viande-halal-gros-marseille-2.png" width="200" alt="logo vente viande halal gros marseille" />
+        <div class="info">
+            <h3>Halal</h3>
+            <span>Bahan yang digunakan 100% Halal</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="https://www.freepnglogos.com/uploads/nature-png/gieth100-natural-logo-leaf-circle-25.png" width="200" alt="gieth100% natural logo, leaf, circle" />
+        <div class="info">
+            <h3>Fresh</h3>
+            <span>Menggunakan bahan yang fresh</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="https://www.freepnglogos.com/uploads/logo-ifood-png/ifood-chef-hat-logo-25.png" width="200" alt="ifood chef hat logo" />
+        <div class="info">
+            <h3>Berpengalaman</h3>
+            <span>Melayani Catering sejak 2016</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="cheap.png" alt="">
+        <div class="info">
+            <h3>Harga Terjangkau</h3>
+            <span>Harga ramah kantong</span>
+        </div>
+    </div>
+   
+</section>
+
+<!-- icons section ends -->
+
+<!-- prodcuts section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> PAKET CATERING</h1>
+    
+    <section class="navigation" id="navigation">
+    <!----service section start--->
+    <div class="slider">
+        <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--radio buttons end-->
+            <!--slide images start-->
+            <div class="slide first">
+                <a href="#"><img src="https://sekilasinfo.net/wp-content/uploads/2022/04/Luminary-Catering.jpg" alt=""></a>
+            </div>
+            <div class="slide">
+                <a href="#"><img src="https://www.mrkitchen.co.id/wp-content/uploads/2020/05/perlengkapan-dapur-catering.jpg" alt=""></a>
+            </div>
+            <div class="slide">
+                <a href="#about"><img src="about.jpg" alt=""></a>
+            </div>
+            <div class="slide">
+                <a href="#"><img src="https://www.mrkitchen.co.id/wp-content/uploads/2020/05/perlengkapan-dapur-catering.jpg" alt=""></a>
+            </div>
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!--automatic navigation end-->
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn" ></label>
+                <label for="radio2" class="manual-btn" ></label>
+                <label for="radio3" class="manual-btn" ></label>
+                <label for="radio4" class="manual-btn" ></label>
+            </div>
+            <!--manual navigation end-->
+            
+            <script type="text/javascript">
+                var counter= 1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                    counter= 1;
+                }
+                },5000);
+            </script>
+        </div>
+    </div>
+    </section>
+</section>
+<section class="features" id="features">
+
+    
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/feature-img-1.png" alt="">
+            <h3>Nasi Box</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-2.png" alt="">
+            <h3>Prasmanan</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-3.png" alt="">
+            <h3>Snack Box</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- prodcuts section ends -->
+<!--review section start-->
+    <section class="review" id="review">
+        <h1 class="heading">REVIEW</h1>
+        <div class="testimonials">
+            <div class="inner">
+             
+              
+      
+              <div class="row">
+                <div class="col">
+                  <div class="testimonial">
+                    <img src="images/p1.png" alt="">
+                    <div class="name">Full name</div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+      
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                  </div>
+                </div>
+      
+                <div class="col">
+                  <div class="testimonial">
+                    <img src="images/p2.png" alt="">
+                    <div class="name">Full name</div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+      
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                  </div>
+                </div>
+      
+                <div class="col">
+                  <div class="testimonial">
+                    <img src="images/p3.png" alt="">
+                    <div class="name">Full name</div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+      
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+<!--review section end-->
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#products">Catering</a>
+            <a href="#review">Review</a>
+            
+        </div>
+
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">Jl. Danau Limboto Dalam No.40 RT 01 RW 04 Kel. Tegal Lega Kec. Bogor Tengah
+            </a>
+
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+62-8584-1400-449</a>
+            <a href="#">dapurgoba@gmail.com</a>
+            <a href="#">Bogor, Indonesia - 16127</a>
+            <img src="images/payment.png" alt="">
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- footer section ends -->
+    </body>
+</html>
