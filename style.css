@@ -640,3 +640,9 @@ header .fa-bars{
     }
 
 }
+
+@media screen and (max-width: 922px) {
+    img{
+    width: 100%;
+    }
+}
