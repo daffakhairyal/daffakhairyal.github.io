@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultContainer = document.getElementById('resultContainer');
     const toggleButton = document.getElementById('toggleButton');
     const backgroundAudio = document.getElementById('backgroundAudio');
-    const results = ['Mie Glosor', 'Beruang Kutub', 'Biji Kurma', 'Kurama', 'Kulit Pisang', 'Harimau Jawa','Kuntilanak', 'Tuyul', 'Panci Gosong'];
+    const results = ['Mie Glosor', 'Beruang Kutub', 'Biji Kurma', 'Kurama', 'Kulit Pisang', 'Harimau Jawa','Kuntilanak', 'Tuyul', 'Panci Gosong','Cantelan Pintu','Super Man','Jokowi'];
     let isPlaying = true;
 
     form.addEventListener('submit', (event) => {
