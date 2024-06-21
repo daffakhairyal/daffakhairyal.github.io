@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultContainer = document.getElementById('resultContainer');
     const toggleButton = document.getElementById('toggleButton');
     const backgroundAudio = document.getElementById('backgroundAudio');
-    const results = ['Mie Glosor', 'Beruang Kutub', 'Biji Kurma', 'Kurama', 'Kulit Pisang', 'Harimau Jawa','Kuntilanak'];
+    const results = ['Mie Glosor', 'Beruang Kutub', 'Biji Kurma', 'Kurama', 'Kulit Pisang', 'Harimau Jawa','Kuntilanak', 'Tuyul', 'Panci Gosong'];
     let isPlaying = true;
 
     form.addEventListener('submit', (event) => {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Create a new <h1> element with the random result
         const resultHeading = document.createElement('h1');
         resultHeading.textContent = randomResult;
-        resultHeading.className = "text-3xl text-red-600 shadow-neon-red";
+        resultHeading.className = "text-3xl text-red-600";
 
         // Append the new <p> and <h1> to the result container
         resultContainer.appendChild(resultParagraph);
