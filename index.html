@@ -508,14 +508,25 @@
       });
   
     </script>
-    <script>
-      const urlParams = new URLSearchParams(window.location.search);
-      const nama = urlParams.get('n') || '';
-      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
-      const namaContainer = document.querySelector('.hero h4 span');
-      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
-  
-      document.querySelector('#nama').value = nama;
-    </script>
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const nama = urlParams.get('n') || '';
+  const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+  const namaContainer = document.querySelector('.hero h4 span');
+
+  // Tambahkan "dan Pasangan" kalau ada nama
+  let text = `${pronoun} ${nama}`.trim();
+  if (nama) text += ' dan Pasangan';
+  text += ',';
+
+  // Hapus spasi berlebih sebelum koma
+  text = text.replace(/ ,$/, ',');
+
+  namaContainer.innerText = text;
+
+  // Isi input nama jika ada
+  document.querySelector('#nama').value = nama;
+</script>
+
 </body>
 </html>
